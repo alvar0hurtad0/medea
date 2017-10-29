@@ -3,9 +3,7 @@ dist: trusty
 sudo: false
 
 php:
-  - 5.6
   - 7.0
-  - 7.1
 
 env:
   global:
@@ -23,7 +21,6 @@ before_install:
   - composer --version
 
 install:
-  - composer --verbose validate
   - composer --verbose install
 
 script:
