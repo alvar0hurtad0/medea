@@ -2,11 +2,16 @@ module:
   big_pipe: 0
   block: 0
   breakpoint: 0
+  ckeditor: 0
+  contextual: 0
   dblog: 0
   dynamic_page_cache: 0
+  editor: 0
   field: 0
+  field_ui: 0
   file: 0
   filter: 0
+  help: 0
   node: 0
   page_cache: 0
   system: 0
@@ -14,6 +19,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  views: 10
   medea: 1000
 theme:
   stable: 0

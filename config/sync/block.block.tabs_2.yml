@@ -6,15 +6,15 @@ dependencies:
     - seven
 id: tabs_2
 theme: seven
-region: pre_content
-weight: 0
+region: header
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Tabs
+  label: 'Primary tabs'
   provider: core
   label_display: '0'
   primary: true
-  secondary: true
+  secondary: false
 visibility: {  }
