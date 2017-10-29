@@ -1,6 +1,7 @@
 # Medea.com
 
-[![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
+[![Build Status](https://travis-ci.org/alvar0hurtad0/medea.svg?branch=master)](https://travis-ci.org/alvar0hurtad0/medea)
+
 
 Pet project www.medea.com
 
