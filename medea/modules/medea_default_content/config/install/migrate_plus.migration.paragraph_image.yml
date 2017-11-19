@@ -1,0 +1,34 @@
+id: paragraph_image
+label: image paragraphs
+migration_group: default_content
+source:
+  plugin: csv
+  path: '/default_content/paragraph_image.csv'
+  delimiter: ','
+  enclosure: '"'
+  # The number of rows at the beginning which are not data.
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    0:
+      id: 'id'
+    1:
+      picture: 'Picture'
+process:
+  field_main_picture/target_id:
+    plugin: file_import
+    source: picture
+  field_main_picture/alt:
+    plugin: default_value
+    default_value: 'test alt'
+  field_main_picture/title:
+    plugin: default_value
+    default_value: 'test title'
+  bundle:
+    plugin: default_value
+    default_value: image
+
+destination:
+    plugin: 'entity_reference_revisions:paragraph'
+    default_bundle: image

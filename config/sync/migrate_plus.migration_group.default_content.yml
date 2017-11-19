@@ -1,0 +1,14 @@
+uuid: cfaded07-8717-48cc-b828-bb17b7d2534d
+langcode: en
+status: true
+dependencies:
+  module:
+    - medea_default_content
+_core:
+  default_config_hash: ndyA7Rq1PFTeFDYW2pAq4FBj9TdiggmvIHeUr_XrmLc
+id: default_content
+label: default_content
+description: ''
+source_type: CSV
+module: medea_default_content
+shared_configuration: null

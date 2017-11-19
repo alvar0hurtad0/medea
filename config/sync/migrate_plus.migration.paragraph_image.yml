@@ -1,0 +1,40 @@
+uuid: 78da7f62-bda3-4ec0-a98f-ee04abd4c759
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Pxm4XtfJZiRyaboUuztaqetw7ZGJ4V4fzD1rT_lv8u8
+id: paragraph_image
+migration_tags: null
+migration_group: default_content
+label: 'image paragraphs'
+source:
+  plugin: csv
+  path: /default_content/paragraph_image.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  column_names:
+    -
+      id: id
+    -
+      picture: Picture
+process:
+  field_main_picture/target_id:
+    plugin: file_import
+    source: picture
+  field_main_picture/alt:
+    plugin: default_value
+    default_value: 'test alt'
+  field_main_picture/title:
+    plugin: default_value
+    default_value: 'test title'
+  bundle:
+    plugin: default_value
+    default_value: image
+destination:
+  plugin: 'entity_reference_revisions:paragraph'
+  default_bundle: image
+migration_dependencies: null
