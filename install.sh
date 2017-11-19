@@ -33,7 +33,8 @@ drush cset system.site uuid $SITE_UUID --yes
 drush cim --yes
 
 # Add default content.
-drush en $PROFILE_NAME_default_content --yes
+# @todo: control this migration with a parameter.
+echo "Import default content."
 drush migrate-import --group=default_content
 
 drush uli --uri=$BASE_DOMAIN_URL
