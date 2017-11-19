@@ -32,4 +32,8 @@ drush site-install $PROFILE_NAME --db-url="mysql://$MYSQL_USERNAME:$MYSQL_PASSWO
 drush cset system.site uuid $SITE_UUID --yes
 drush cim --yes
 
+# Add default content.
+drush en $PROFILE_NAME_default_content --yes
+drush migrate-import --group=default_content
+
 drush uli --uri=$BASE_DOMAIN_URL
