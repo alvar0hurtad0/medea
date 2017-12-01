@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Medea components: contact module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function medea_components_contact_entity_extra_field_info() {
+  // Get the service implementing the logic.
+  $extra_fields_info = \Drupal::service('medea_components_contact.extrafields');
+
+  return $extra_fields_info->entityExtraFieldInfo();
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function medea_components_contact_paragraph_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  // Get the service implementing the logic.
+  $extra_fields_info = \Drupal::service('medea_components_contact.extrafields');
+
+  return $extra_fields_info->paragraphView($build, $entity, $display, $view_mode);
+}

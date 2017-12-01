@@ -1,0 +1,24 @@
+uuid: 0d9133fa-074b-4746-bd38-22c94da36d96
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - medea_bootstrap
+id: medea_bootstrap_mainnavigation_3
+theme: medea_bootstrap
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,4 +1,5 @@
 ignored_config_entities:
-  - 'migrate_plus.*'
+  0: 'migrate_plus.*'
+  2: 'core.extension:module[medea_default_content]'
 _core:
   default_config_hash: UVH1aJ4b44UM-VdPVN7hNNuuVqfReJxwfVeDQH1Hvsk

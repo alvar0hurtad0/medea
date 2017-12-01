@@ -1,0 +1,32 @@
+uuid: c52dabdd-5b71-4987-809b-8ceaa7c2aa39
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service.body
+    - field.field.node.service.icon_picture
+    - field.field.node.service.main_picture
+    - image.style.services_galery
+    - node.type.service
+  module:
+    - image
+    - user
+id: node.service.teaser
+targetEntityType: node
+bundle: service
+mode: teaser
+content:
+  icon_picture:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: services_galery
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  body: true
+  links: true
+  main_picture: true

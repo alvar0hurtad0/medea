@@ -1,0 +1,25 @@
+uuid: e80967df-8e35-4f63-b637-b113d80b08c9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text_block:e5c53cbb-4064-43bb-8e9a-de7a28405ce0'
+  module:
+    - block_content
+  theme:
+    - medea_bootstrap
+id: medea_bootstrap_mapa
+theme: medea_bootstrap
+region: content
+weight: 1
+provider: null
+plugin: 'block_content:e5c53cbb-4064-43bb-8e9a-de7a28405ce0'
+settings:
+  id: 'block_content:e5c53cbb-4064-43bb-8e9a-de7a28405ce0'
+  label: Mapa
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

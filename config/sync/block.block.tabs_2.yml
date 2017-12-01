@@ -7,7 +7,7 @@ dependencies:
 id: tabs_2
 theme: seven
 region: header
-weight: 0
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:
@@ -16,5 +16,5 @@ settings:
   provider: core
   label_display: '0'
   primary: true
-  secondary: false
+  secondary: true
 visibility: {  }

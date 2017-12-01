@@ -1,0 +1,9 @@
+uuid: c6ea5c6f-256c-467f-9ba6-2b64061486ce
+langcode: en
+status: true
+dependencies: {  }
+id: contact_form
+label: 'Contact form'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

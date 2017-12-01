@@ -1,0 +1,17 @@
+uuid: 8f19308e-587e-4b50-a754-afa53869ab93
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: services_galery
+label: 'Services galery'
+effects:
+  d6d27475-ae5b-43fd-aad8-44598035e66b:
+    uuid: d6d27475-ae5b-43fd-aad8-44598035e66b
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 350
+      height: 200
+      crop_type: focal_point

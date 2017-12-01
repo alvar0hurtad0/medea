@@ -28,13 +28,13 @@ cd $ROOT/web
 
 drush cc drush
 
+drush sql-drop --yes
 drush site-install $PROFILE_NAME --db-url="mysql://$MYSQL_USERNAME:$MYSQL_PASSWORD@$MYSQL_HOSTNAME/$MYSQL_DB_NAME"  --account-name=$ADMIN_USERNAME --account-pass=$ADMIN_PASSWORD --yes
 drush cset system.site uuid $SITE_UUID --yes
-drush cim --yes
+drush config-import --yes
+
 
 # Add default content.
 # @todo: control this migration with a parameter.
-echo "Import default content."
-drush migrate-import --group=default_content
 
 drush uli --uri=$BASE_DOMAIN_URL

@@ -1,0 +1,25 @@
+uuid: 60f091be-7988-4f02-8836-05e4fb66e2e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_galery.service_reference
+    - paragraphs.paragraphs_type.services_galery
+id: paragraph.services_galery.default
+targetEntityType: paragraph
+bundle: services_galery
+mode: default
+content:
+  service_reference:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

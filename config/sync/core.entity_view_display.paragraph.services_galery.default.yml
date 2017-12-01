@@ -1,0 +1,22 @@
+uuid: e920ca80-701c-4e00-949f-6d2435267c36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services_galery.service_reference
+    - paragraphs.paragraphs_type.services_galery
+id: paragraph.services_galery.default
+targetEntityType: paragraph
+bundle: services_galery
+mode: default
+content:
+  service_reference:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }
