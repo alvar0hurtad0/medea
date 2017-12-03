@@ -1,0 +1,28 @@
+uuid: 4cb5358e-c15e-4549-a5b6-1566243d23dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.service_reference
+    - node.type.service
+    - paragraphs.paragraphs_type.services_galery
+id: paragraph.services_galery.service_reference
+field_name: service_reference
+entity_type: paragraph
+bundle: services_galery
+label: 'Service reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      service: service
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,4 @@
+services:
+  medea_components_contact.extrafields:
+    class: Drupal\medea_components_contact\ExtraFields
+    arguments: ['@entity_type.manager', '@entity.form_builder']

@@ -1,0 +1,25 @@
+uuid: 81ccab1c-273c-40bb-bb43-73b9bd93ddab
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text_block:7262085b-cf8e-4df1-8343-32a8f3173f64'
+  module:
+    - block_content
+  theme:
+    - medea_bootstrap
+id: medea_bootstrap_horarios
+theme: medea_bootstrap
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7262085b-cf8e-4df1-8343-32a8f3173f64'
+settings:
+  id: 'block_content:7262085b-cf8e-4df1-8343-32a8f3173f64'
+  label: horarios
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: default_content
-label: default_content
-description: ''
-source_type: 'CSV'
-module: medea_default_content

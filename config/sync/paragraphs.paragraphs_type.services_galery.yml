@@ -1,0 +1,9 @@
+uuid: bbff9e49-1d10-4a14-8cb9-4e2cfd07d469
+langcode: en
+status: true
+dependencies: {  }
+id: services_galery
+label: 'Services galery'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

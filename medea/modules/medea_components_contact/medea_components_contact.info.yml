@@ -1,0 +1,7 @@
+name: "Medea components: contact"
+type: module
+description: Adds a component contact to a paragraph type contact.
+package: Medea
+core: 8.x
+dependencies:
+  - webform

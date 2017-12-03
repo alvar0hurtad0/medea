@@ -1,0 +1,38 @@
+uuid: 6bfd4a8e-7c4f-405e-a5c1-8184fd554905
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.icon_picture
+    - node.type.service
+  module:
+    - image
+id: node.service.icon_picture
+field_name: icon_picture
+entity_type: node
+bundle: service
+label: 'Icon picture'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 8be7599c-184c-4192-9835-8dfc149f719a
+    alt: 'Veterinario merida'
+    title: ''
+    width: 366
+    height: 350
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

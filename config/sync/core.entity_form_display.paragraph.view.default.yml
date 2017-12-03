@@ -1,0 +1,19 @@
+uuid: fd2b3e62-5422-4bf0-8f01-8f4d18f9cc98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.view.form
+    - field.field.paragraph.view.view_reference
+    - paragraphs.paragraphs_type.view
+id: paragraph.view.default
+targetEntityType: paragraph
+bundle: view
+mode: default
+content: {  }
+hidden:
+  created: true
+  form: true
+  status: true
+  uid: true
+  view_reference: true

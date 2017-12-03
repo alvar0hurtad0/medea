@@ -1,0 +1,9 @@
+uuid: 4538c727-f650-41f7-81cd-b7a80b5d2698
+langcode: en
+status: true
+dependencies: {  }
+id: long_text
+label: 'long text'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

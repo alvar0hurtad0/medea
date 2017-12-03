@@ -1,0 +1,20 @@
+uuid: 6544c4cd-950a-4650-89d9-a5bbcbfb5ce4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - medea_bootstrap
+id: medea_bootstrap_mainpagecontent_2
+theme: medea_bootstrap
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

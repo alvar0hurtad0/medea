@@ -1,0 +1,26 @@
+uuid: 5f17664d-7d3a-451f-9147-cee734041eac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.view_reference
+    - paragraphs.paragraphs_type.view
+    - views.view.entity_browser_images
+id: paragraph.view.view_reference
+field_name: view_reference
+entity_type: paragraph
+bundle: view
+label: view_reference
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: fc9ad143-76d1-43db-8994-bc84417f58db
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

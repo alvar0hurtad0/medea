@@ -1,0 +1,9 @@
+uuid: 0e778054-c3d6-4fae-b8de-5d77160e9940
+langcode: en
+status: true
+dependencies: {  }
+id: view
+label: view
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

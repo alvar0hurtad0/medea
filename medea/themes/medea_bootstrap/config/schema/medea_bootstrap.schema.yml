@@ -1,0 +1,3 @@
+medea.settings:
+  type: theme_settings
+  label: 'Medea settings'
