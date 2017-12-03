@@ -80,3 +80,6 @@ a.responsive-logo {
     -webkit-box-shadow: 0 0 5px #ccc;
 }
 
+.service.teaser h2 {
+    font-size: 1.1em;
+}
