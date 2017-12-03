@@ -28,6 +28,7 @@ module:
   menu_ui: 0
   node: 0
   page_cache: 0
+  path: 0
   serialization: 0
   system: 0
   text: 0
@@ -39,6 +40,7 @@ module:
   webform: 0
   webform_ui: 0
   menu_link_content: 1
+  pathauto: 1
   views: 10
   paragraphs: 11
   medea: 1000
